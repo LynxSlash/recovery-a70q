@@ -25,9 +25,6 @@
 /mnt/vendor/efs            ext4     /dev/block/bootdevice/by-name/efs
 /efs                       ext4     /dev/block/bootdevice/by-name/sec_efs
 
-auto                       auto     /devices/platform/soc/8804000.sdhci/mmc_host*                         flags=display=auto
-auto                       auto     /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*     flags=display=auto
-
 # Storages
 /external_sd   vfat   /dev/block/mmcblk0p1               /dev/block/mmcblk0   flags=display="Micro SDcard";storage;wipeingui;removable;encryptable=footer;length=-16384;
 /usb-otg       vfat   /dev/block/sde1                    /dev/block/sde       flags=display="USB-OTG";storage;wipeingui;removable;
