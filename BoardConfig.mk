@@ -1,5 +1,7 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2023 The TWRP Open Source Project
+# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -137,9 +139,6 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-# Inherit from the proprietary version
--include vendor/samsung/a70q/BoardConfigVendor.mk
-
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
@@ -151,11 +150,12 @@ TW_DEFAULT_BRIGHTNESS := 180
 TW_MAX_BRIGHTNESS := 255
 TW_Y_OFFSET := 77
 TW_H_OFFSET := -77
-
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
-
 TW_HAS_DOWNLOAD_MODE := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_INCLUDE_NTFS_3G := true
 TW_NO_LEGACY_PROPS := true
 TW_NO_REBOOT_BOOTLOADER := true
+
+## TARGET_RECOVERY_QCOM_RTC_FIX := true
+## TW_INCLUDE_CRYPTO := true
+## TW_INCLUDE_LPDUMP := true
+## TW_INCLUDE_LPTOOLS := true

@@ -1,5 +1,7 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2023 The TWRP Open Source Project
+# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -37,7 +39,6 @@ PRODUCT_PACKAGES += \
     init.qcom.efs.sync.sh \
     init.qcom.sensors.sh \
     init.qti.qcv.sh \
-    qca6234-service.sh
 
 # Ramdisk etc
 PRODUCT_PACKAGES += \
@@ -52,14 +53,6 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    wifi_qcom.rc \
-    wifi_sec.rc \
-    init.nfc.samsung.rc \
-    init.vendor.onebinary.rc \
-    init.vendor.rilchip.rc \
-    init.vendor.rilcommon.rc \
-    init.vendor.sensors.rc \
-    init.vendor.sysfw.rc
 
 # Recovery
 PRODUCT_COPY_FILES += \
