@@ -16,14 +16,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti-a70q \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Ramdisk bin
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -57,18 +49,6 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
-
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.samsung-multihal \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor \
-    sensors.samsung \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor
-
-# Sensor Configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Thermal
 PRODUCT_PACKAGES += \
