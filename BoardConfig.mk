@@ -149,3 +149,51 @@ TW_NO_REBOOT_BOOTLOADER := true
 ## TW_INCLUDE_CRYPTO := true
 ## TW_INCLUDE_LPDUMP := true
 ## TW_INCLUDE_LPTOOLS := true
+
+
+# SHRP Configuration
+
+# Device codename
+SHRP_DEVICE_CODE := a70q
+
+# Maintainer name
+SHRP_MAINTAINER := lynx
+
+# Recovery Type
+SHRP_REC_TYPE := Treble
+
+# Device Type (for "About" section only)
+SHRP_DEVICE_TYPE := A_Only
+
+# Your device's recovery path
+SHRP_REC := /dev/block/by-name/recovery
+
+# Use this flag only if SHRP_REC is set
+SHRP_HAS_RECOVERY_PARTITION := true
+
+# Emergency DownLoad mode
+SHRP_EDL_MODE := 1
+
+# Internal storage path
+SHRP_INTERNAL := /sdcard
+
+# External SDcard path
+
+SHRP_EXTERNAL := /external_sd
+
+# USB OTG path
+SHRP_OTG := /usb_otg
+
+# Flashlight: 
+SHRP_FLASH := 1
+
+# For notch devices
+SHRP_NOTCH := true
+
+# SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
+SHRP_EXPRESS := true
+
+#SHRP_CUSTOM_FLASHLIGHT := true
+#SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
+#SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
+#SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
